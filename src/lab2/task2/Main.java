@@ -11,14 +11,15 @@ public class Main {
 
         student2.setName("Cezar");
         student2.setSurname("Ghiu");
-        
+
+        // Sunt la mare, prima modificare
+
         /*
             trebuie sa afiseze
             Name: Decebal
             Surname: Popescu
             Student ID: 42
         */
-        student1.show();
 
         /*
             trebuie sa afiseze
