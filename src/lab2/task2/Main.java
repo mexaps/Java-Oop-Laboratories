@@ -20,7 +20,7 @@ public class Main {
             Surname: Popescu
             Student ID: 42
         */
-
+        student1.show();
         /*
             trebuie sa afiseze
             Name: Cezar
