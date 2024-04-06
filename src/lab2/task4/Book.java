@@ -11,8 +11,9 @@ public class Book {
         this.year = year;
     }
 
+    Book st=new Book("titlu", "autor","an")
     public String toString() {
-        // TODO
+        System.out.println(st);
         return null;
     }
 }

@@ -7,6 +7,6 @@ public int getAnimalsCount() {
 return dogs + cats;
 }
 public void displayStatistics() {
-System.out.println("Total number of animals is " + getAnimalsCount());
+    System.out.println("Total number of animals is " + getAnimalsCount());
 }
 }

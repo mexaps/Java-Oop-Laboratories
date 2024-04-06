@@ -6,7 +6,7 @@ public class Main {
         /*
             noi dorim sa facem o copie a obiectului student1, numita student2
             apoi sa modificam copia respectiva
-        */
+        /
         Student student2 = student1;
 
         student2.setName("Cezar");
@@ -14,14 +14,14 @@ public class Main {
 
         // Sunt la mare, prima modificare
 
-        /*
+        /
             trebuie sa afiseze
             Name: Decebal
             Surname: Popescu
             Student ID: 42
-        */
+        /
         student1.show();
-        /*
+        /
             trebuie sa afiseze
             Name: Cezar
             Surname: Ghiu
