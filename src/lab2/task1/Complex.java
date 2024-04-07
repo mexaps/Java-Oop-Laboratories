@@ -36,11 +36,11 @@ public class Complex {
     }
 
     void addWithComplex(Complex complex){
-        this.real+=complex.real;
-        this.imaginary+=complex.imaginary;
+        real+=complex.real;
+        imaginary+=complex.imaginary;
     }
     public void showNumber(){
-        System.out.println(real+"+"+imaginary);
+        System.out.println(real + " + " + imaginary + "i");
     }
 }
 

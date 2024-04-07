@@ -11,9 +11,12 @@ public class Book {
         this.year = year;
     }
 
-    Book st=new Book("titlu", "autor","an")
+    @Override
     public String toString() {
-        System.out.println(st);
-        return null;
+        return "Book{" +
+                "title='" + title + '\'' +
+                ", author='" + author + '\'' +
+                ", year=" + year +
+                '}';
     }
 }

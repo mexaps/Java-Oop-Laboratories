@@ -5,15 +5,17 @@ public class Point {
     public float x;
     public float y;
 
-    public Point(Float x, Float y){
+    public Point(float x, float y){
         this.x=x;
         this.y=y;
     }
-    void changeCoords(Float altx, Float alty){
-        this.x=altx;
-        this.y=alty;
+    void changeCoords(float x, Float y){
+        this.x=x;
+        this.y=y;
     }
-    void Afisare(){
-        System.out.println("("x","y")");
+
+    void afisare(){
+        System.out.println("(" + x + ", " + y + ")");
     }
+
 }
