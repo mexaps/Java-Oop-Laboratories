@@ -19,6 +19,7 @@ public class Student {
         this.subjects = subjects;
     }
 
+
     // TODO: copy constructor
 
     public String getFirstName() {
@@ -46,8 +47,14 @@ public class Student {
     }
 
     public double averageGrade() {
-        // TODO
-        return 0;
+        double grade = 0;
+        int nrSubjects = 0;
+        for (Map.Entry<String, Integer> subject : subjects.entrySet()) {
+            grade += subject.getValue();
+            ++nrSubjects;
+        }
+        if (nrSubjects == 0) return -1;
+        return grade / nrSubjects;
     }
 
     public List<Teacher> getAllTeachers() {
@@ -56,8 +63,7 @@ public class Student {
     }
 
     public int getGradeForSubject(String subject) {
-        // TODO
-        return 0;
+        return subjects.get(subject);
     }
 
     @Override

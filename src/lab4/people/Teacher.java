@@ -15,7 +15,10 @@ public class Teacher {
         this.subjects = subjects;
     }
 
-    // TODO: copy constructor
+   public Teacher(Teacher teacher1){
+        this(teacher1.firstName, teacher1.lastName, teacher1.subjects);
+        subjects.addAll(teacher1.subjects);
+   }
 
     @Override
     public String toString() {

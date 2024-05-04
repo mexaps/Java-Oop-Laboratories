@@ -8,15 +8,30 @@ import java.util.Comparator;
 import java.util.List;
 
 public class Database {
-    private List<Student> students = new ArrayList<>();
-    private List<Teacher> teachers = new ArrayList<>();
 
-    // TODO: make it Singleton
+    private static Database instance = null;
+    private final List<Student> students = new ArrayList<>();
+    private final List<Teacher> teachers = new ArrayList<>();
+
+
 
     public static int getNumberOfInstances() {
         // TODO
         return 0;
     }
+
+    private Database(){
+
+    }
+
+    private static Database getInstance(){
+        if(instance == null){
+            instance = new Database();
+        }
+        return instance;
+    }
+
+
 
     public void addTeachers(List<Teacher> teachers) {
         this.teachers.addAll(teachers);
